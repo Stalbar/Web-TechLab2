@@ -12,6 +12,9 @@ public class Fridge extends Appliance {
         this.widthInMeters = widthInMeters;
     }
 
+    public Fridge() {
+    }
+
     public double getPowerConsumption() {
         return powerConsumption;
     }

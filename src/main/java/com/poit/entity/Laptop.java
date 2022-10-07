@@ -12,6 +12,9 @@ public class Laptop extends Appliance {
         this.ramMemoryCapacity = ramMemoryCapacity;
     }
 
+    public Laptop() {
+    }
+
     public String getOperatingSystem() {
         return operatingSystem;
     }

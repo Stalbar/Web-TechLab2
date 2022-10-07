@@ -14,6 +14,9 @@ public class Kettle extends Appliance {
         return powerConsumption;
     }
 
+    public Kettle() {
+    }
+
     public void setPowerConsumption(double powerConsumption) {
         this.powerConsumption = powerConsumption;
     }
@@ -24,5 +27,16 @@ public class Kettle extends Appliance {
 
     public void setVolume(double volume) {
         this.volume = volume;
+    }
+
+    @Override
+    public String toString() {
+        return "Kettle{" +
+                "powerConsumption=" + powerConsumption +
+                ", volume=" + volume +
+                ", price=" + price +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 }

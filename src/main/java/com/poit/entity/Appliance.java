@@ -1,5 +1,8 @@
 package com.poit.entity;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+@JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, property = "className")
 public abstract class Appliance {
     protected double price;
     protected String manufacturer;
@@ -9,6 +12,9 @@ public abstract class Appliance {
         this.price = price;
         this.manufacturer = manufacturer;
         this.color = color;
+    }
+
+    public Appliance() {
     }
 
     public double getPrice() {

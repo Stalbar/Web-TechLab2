@@ -38,4 +38,16 @@ public class Laptop extends Appliance {
     public void setRamMemoryCapacity(int ramMemoryCapacity) {
         this.ramMemoryCapacity = ramMemoryCapacity;
     }
+
+    @Override
+    public String toString() {
+        return "Laptop{" +
+                "operatingSystem='" + operatingSystem + '\'' +
+                ", batteryCapacity=" + batteryCapacity +
+                ", ramMemoryCapacity=" + ramMemoryCapacity +
+                ", price=" + price +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }

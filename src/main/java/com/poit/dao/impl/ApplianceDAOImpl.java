@@ -32,6 +32,8 @@ public class ApplianceDAOImpl implements ApplianceDAO {
             }
             List<Appliance> filtredAppliance = new ArrayList<>();
             var map = criteria.getCriteriaMap();
+            if (map.isEmpty())
+                return concreateAppliances;
             for(Map.Entry<String, Object> entry: map.entrySet()){
                 String fieldToSearch = entry.getKey();
                 Object valueToSeacrh = entry.getValue();

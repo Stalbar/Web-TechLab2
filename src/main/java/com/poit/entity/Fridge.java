@@ -38,4 +38,16 @@ public class Fridge extends Appliance {
     public void setWidthInMeters(double widthInMeters) {
         this.widthInMeters = widthInMeters;
     }
+
+    @Override
+    public String toString() {
+        return "Fridge{" +
+                "powerConsumption=" + powerConsumption +
+                ", heightInMeters=" + heightInMeters +
+                ", widthInMeters=" + widthInMeters +
+                ", price=" + price +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
